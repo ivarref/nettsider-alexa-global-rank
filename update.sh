@@ -2,6 +2,8 @@
 
 set -ex
 
+git pull
+
 rm *.sqlite
 
 ./log_changes.py | tail -n1 >> country_rank.tsv
