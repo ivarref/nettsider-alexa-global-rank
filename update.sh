@@ -4,7 +4,7 @@ set -ex
 
 git pull
 
-rm *.sqlite
+rm -f *.sqlite
 
 ./log_changes.py | tail -n1 >> country_rank.tsv
 git add country_rank.tsv
